@@ -44,15 +44,16 @@ body {
 }
 
 h1 {
-  padding: 1rem 2rem;
+  padding: 0.5rem 3rem;
   margin: 0;
-  margin-top: 2rem;
-  font-size: 1.5rem;
+  margin-top: 0.5rem;
+  font-size: 1.3rem;
 }
 
 .parrafo {
   margin: 0;
-  font-size: 0.8rem;
+  font-size: 0.75rem;
+  padding: 0 1.5rem;
 }
 
 .subscribe {
@@ -63,39 +64,62 @@ h1 {
 .trial {
   background-color: var(--blue);
   margin: 1rem 1.5rem;
-  border-radius: 0.7rem;
+  border-radius: 0.5rem;
   font-size: 0.8rem;
   text-align: center;
-  color: white;
+  color: rgb(230, 227, 227);
   padding: 0 5rem;
+  box-shadow: 0px 6px 0px 0px rgba(0, 0, 0, 0.2);
+}
+
+strong {
+  color: white;
 }
 
 form {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
   background-color: white;
   margin: 1.5rem;
   margin-top: 0;
   padding: 1rem;
-  border-radius: 0.7rem;
+  border-radius: 0.5rem;
+  box-shadow: 0px 7px 0px 0px rgba(0, 0, 0, 0.2);
 }
 
 input {
+  position: relative;
   margin: 0.3rem;
   border-radius: 0.3rem;
   font-size: 0.7rem;
-  height: 3rem;
-  width: 18rem;
+  width: 75vw;
+  height: 7vh;
   text-align: left;
   padding-left: 1rem;
   font-weight: bold;
-  border: thin solid var(--grayish-blue);
+  border: thin solid rgb(207, 204, 204);
 }
 
 .btn {
   background-color: var(--green);
+  width: 75vw;
+  height: 7vh;
+  font-size: 0.8rem;
+  padding-top: 0.4rem;
   color: white;
   text-align: center;
+  border: 0;
+  border-radius: 0.3rem;
+  box-shadow: 0px 4px 0px 0px rgb(66, 180, 130);
+  cursor: pointer;
+  margin-top: 0.4rem;
+}
+
+.btn:hover {
+  background-color: hsl(154, 59%, 51%, 0.5);
 }
 
 ::placeholder {
@@ -107,4 +131,133 @@ input {
   margin-bottom: 0;
   text-align: center;
   padding: 0 2.5rem;
+  color: var(--grayish-blue);
+}
+
+.terms strong {
+  color: var(--red);
+  font-weight: bold;
+}
+
+/* Message error & Error icon */
+#first-name-error {
+  display: none;
+  color: var(--red);
+  font-size: 0.7rem;
+  margin: 0;
+  padding-left: 40%;
+}
+
+#last-name-error {
+  display: none;
+  color: var(--red);
+  font-size: 0.7rem;
+  margin: 0;
+  padding-left: 40%;
+}
+
+#email-error {
+  display: none;
+  color: var(--red);
+  font-size: 0.7rem;
+  margin: 0;
+  padding-left: 40%;
+}
+
+#password-error {
+  display: none;
+  color: var(--red);
+  font-size: 0.7rem;
+  margin: 0;
+  padding-left: 40%;
+}
+
+#first-icon-error {
+  display: none;
+  position: absolute;
+  bottom: 85%;
+  right: 15%;
+  z-index: 999;
+}
+
+#second-icon-error {
+  display: none;
+  position: absolute;
+  bottom: 67%;
+  right: 15%;
+}
+
+#third-icon-error {
+  display: none;
+  position: absolute;
+  bottom: 50%;
+  right: 15%;
+}
+
+#four-icon-error {
+  display: none;
+  position: absolute;
+  bottom: 32%;
+  right: 15%;
+}
+
+@media screen and (min-width: 478px) {
+  #second-icon-error {
+    bottom: 66%;
+  }
+
+  #third-icon-error {
+    bottom: 48%;
+    right: 15%;
+  }
+
+  #four-icon-error {
+    bottom: 30%;
+    right: 15%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .main {
+    flex-direction: row;
+  }
+
+  .text-content {
+    margin-top: 12rem;
+    margin-right: 2rem;
+    text-align: left;
+  }
+
+  h1 {
+    font-size: 3.2vw;
+    margin-bottom: 1rem;
+  }
+
+  .parrafo {
+    font-size: 1rem;
+    margin-left: 1.5rem;
+  }
+
+  .subscribe {
+    margin-top: 4rem;
+    margin-right: 6rem;
+  }
+
+  input,
+  .btn {
+    width: 30vw;
+    height: 8.5vh;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .text-content {
+    padding: 0 4rem;
+  }
+
+  .trial {
+    width: 35vw;
+    height: 8.5vh;
+    padding-top: 0.5rem;
+  }
 }

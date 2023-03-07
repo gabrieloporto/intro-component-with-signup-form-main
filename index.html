@@ -29,36 +29,78 @@
         </div>
         <form action="">
           <input
+            id="first-name"
             type="text"
             name="first-name"
             placeholder="First Name"
-            required
           />
+          <p id="first-name-error">
+            <i>First Name cannot be empty</i>
+          </p>
+          <div id="first-icon-error">
+            <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+              <g fill="none" fill-rule="evenodd">
+                <circle fill="#FF7979" cx="12" cy="12" r="12" />
+                <rect fill="#FFF" x="11" y="6" width="2" height="9" rx="1" />
+                <rect fill="#FFF" x="11" y="17" width="2" height="2" rx="1" />
+              </g>
+            </svg>
+          </div>
           <input
+            id="last-name"
             type="text"
             name="last-name"
             placeholder="Last Name"
-            required
           />
+          <p id="last-name-error">
+            <i>Last Name cannot be empty</i>
+          </p>
+          <div id="second-icon-error">
+            <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+              <g fill="none" fill-rule="evenodd">
+                <circle fill="#FF7979" cx="12" cy="12" r="12" />
+                <rect fill="#FFF" x="11" y="6" width="2" height="9" rx="1" />
+                <rect fill="#FFF" x="11" y="17" width="2" height="2" rx="1" />
+              </g>
+            </svg>
+          </div>
           <input
+            id="email"
             type="email"
             name="email"
             placeholder="Email Address"
-            required
           />
+          <p id="email-error">
+            <i>Looks like this is not an email</i>
+          </p>
+          <div id="third-icon-error">
+            <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+              <g fill="none" fill-rule="evenodd">
+                <circle fill="#FF7979" cx="12" cy="12" r="12" />
+                <rect fill="#FFF" x="11" y="6" width="2" height="9" rx="1" />
+                <rect fill="#FFF" x="11" y="17" width="2" height="2" rx="1" />
+              </g>
+            </svg>
+          </div>
           <input
+            id="password"
             type="password"
             name="password"
             placeholder="Password"
-            required
           />
-          <input
-            class="btn"
-            type="submit"
-            name="submit"
-            value="CLAIM YOUR FREE TRIAL"
-          />
-          <!-- <button class="btn">CLAIM YOUR FREE TRIAL</button> -->
+          <p id="password-error">
+            <i>Password cannot be empty</i>
+          </p>
+          <div id="four-icon-error">
+            <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+              <g fill="none" fill-rule="evenodd">
+                <circle fill="#FF7979" cx="12" cy="12" r="12" />
+                <rect fill="#FFF" x="11" y="6" width="2" height="9" rx="1" />
+                <rect fill="#FFF" x="11" y="17" width="2" height="2" rx="1" />
+              </g>
+            </svg>
+          </div>
+          <button class="btn">CLAIM YOUR FREE TRIAL</button>
           <p class="terms">
             By clicking the button, you are agreeing to our
             <strong>Terms and services</strong>
